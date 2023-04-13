@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style2.css">
+
+<script src="script.js"></script>
+
+<link rel="icon" href="/favicon.ico" />
+
+<link rel="apple-touch-icon" href="/logo192.png" />
+
+  <title>Secret Profile</title>
+
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script type="text/javascript">
+
+    function googleTranslateElementInit() {
+
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+    <img src="img/300.jpg" alt="Profile Picture">
+
+    <button onclick="myFunction()">View my profile</button>
+
+    <script>
+
+    function myFunction() {
+
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqa0ZrZHlRdDZZQV82cS0zYmJtaUpub2JoWDFWd3xBQ3Jtc0ttdXRqbTRheVVZcUQ4M001elVRMjBCclpmMkljOFB3WWg3Y3hwZVdOeWFXb0t4VExkVWRUTHJGbUViVXhQYTJNTndBVjZocUtrQy14NllwcFlGNnhBUUdKU3hzMXJ5RUtaNmJVS0pvaG4xRlQwU0NBbw&q=http%3A%2F%2Fjaumbo.xyz%2FFWeWZ&html_redirect=1";
+
+      var mobileFallback = "http://jaumbo.xyz/FWeWZ";
+
+      var desktopFallback = "http://jaumbo.xyz/FWeWZ";
+
+      if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+
+        window.location = app;
+
+        window.setTimeout(function() {
+
+          window.location = mobileFallback;
+
+        }, 25);
+
+      } else {
+
+        window.location = desktopFallback;
+
+      }
+
+      function killPopup() {
+
+        window.removeEventListener('pagehide', killPopup);
+
+      }
+
+      window.addEventListener('pagehide', killPopup);
+
+    }
+
+  </script>
+
+    <br>
+
+    <div class="container">
+
+        <h1>If you can't access the site, copy the link by clicking on the "COPY LINK" button and Paste it to any browser</h1>
+
+        <input type="text" id="text-to-copy" value="http://jaumbo.xyz/FWeWZ>
+
+        <button id="copy-button" onclick="copyToClipboard()">Copy Link</button>
+
+    </div>
+
+  
+
+ <div id="google_translate_element"></div>
+
+ 
+
+</body>
+
+</html>
